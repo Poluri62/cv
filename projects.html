@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+    <body>
+        <div id="main">
+            <div class="topnav">
+                <a id="toggleSideNav" href="#" style="font-size:17px;cursor:pointer;float:left" onclick="toggleNav()">&#9776;</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Experience</a>
+                <a class="active"  href="projects.html">Projects</a>
+                <a href="#">Skills</a>
+                <a href="index.html">Home</a>
+            </div>
+            <div class="sidebar" id="mySideNav">
+                <div style="height: 45px;"></div>
+                <a href="#computer-vision" class="dropdown-ref">Computer Vision<i class="fa fa-caret-down"></i></a> 
+                <div class="dropdown-container">
+                    <a href="#sign-lang">Sign Language Recognition</a>
+                    <a href="#face-recognition">Face Recogntion</a>
+                </div>
+                <a href="#machine-learning" class="dropdown-ref">Machine Learning<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-container">
+                    <a href="#item-weight-prediction">Item Weight Prediction - Walmart Global Tech</a>
+                </div>
+                <a href="#machine-learning" class="dropdown-ref">Android Apps<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-container">
+                    <a href="#mnist-app">Digit Recognizer</a>
+                </div>
+                <!--a href="#contact">Mobile Apps</a>
+                <a href="#contact">JavaScript</a-->
+            </div>
+
+            <div class="skills">
+                <h2 id="computer-vision" style="padding-top: 6%;padding-left:12.5%;font-family: Helvetica, sans-serif; font-size:400%; text-align: left;">Computer Vision</h2>
+                <div class="skill-row" id="sign-lang">
+                    <img class="text-left-of-image" src="images/ASL.jpeg" alt="image">
+                    <h3>Sign Language Recognition</h3>
+                    <p>
+                    The objective was to build a recognizer that would convert signs from the American Sign Language(ASL) and convert it into text. 
+                    It takes an image as an input(or captures images from a camera), recognizes a hand in the image and classifies the sign(if there is one) 
+                    into 26 letters of the English alphabet. This was achieved by leveraging Python and OpenCV to use transfer learning on the YOLOv3 Object 
+                    Detection model. The model achieved a mAP(mean average precision) of <i>60.6</i>.
+                    <br><br>
+                    <strong>Tech Stack - </strong> Python, OpenCV, Object Detection, Transfer learning, Convolutional Neural Networks
+                    </p>
+                    <a href="https://github.com/Poluri62/sign-language-recognizer">Github</a>
+                    <a href="https://github.com/Poluri62/sign-language-recognizer/tree/main/Documentation" style="padding-left: 2%;">Documentation</a>
+                </div>
+
+                <div class="skill-row" id="face-recognition">
+                    <!--img class="text-right-of-image" src="images/ASL.jpeg" alt="image"-->
+                    <h3>Face Recognition</h3>
+                    <p>
+                    The objective was to encode known faces, save them, and have the recognizer use these saved encodings to recognize people from 
+                    images or video. 
+                    <br><br>
+                    <strong>Tech Stack - </strong> Python, OpenCV, Face Recognition, Convolutional Neural Networks
+                    </p>
+                    <a href="">Github</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="skills">
+                <h2 id="machine-learning" style="padding-top: 3%;padding-left:12.5%;font-family: Helvetica, sans-serif; font-size:400%; text-align: left;">
+                    Machine Learning
+                </h2>
+                <div class="skill-row" id="item-weight-prediction">
+                    <img class="text-left-of-image" src="images/model-loss.png" alt="Model Loss" style="width: 32%;">
+                    <h3>ML based Item Weight Prediciton - Walmart Global Tech</h3>
+                    <p>
+                        Today in this highly digitized world, data accuracy is paramount, especially in the supply chain world where even a small percentage 
+                        of data discrepancy could hurt business. In order to leverage artificial intelligence to provide solutions to remove item meta-data 
+                        discrepancy in the product catalogue that is fed into the Sam’s Club sourcing engine (FASTr), a Machine Learning model was developed 
+                        for predicting the weight of an item in the product catalogue.<br>
+                        The dataset consisted of 200,000 items whose metadata was used for training and testing the machine learning model. The main features 
+                        used were the item's name, category, manufacturing info specification, short description, brand and keywordsfor predicting its weight. 
+                        Several preprocessing methods, Vectorization techniques and Machine learning and deep learning algorithms were tested. The best model 
+                        had an R2 score of 0.93. <br>
+                        This model will be integrated as a service into the sourcing engine pipeline to cross-check the item weight meta-data in the database, 
+                        and flag discrepancies.
+                        <br><br>
+                        <strong>Tech Stack - </strong> Python, PySpark, Azure Databricks
+                    </p>
+                </div>
+                <div class="skill-row" id="sentiment-analysis">
+                    <img class="text-right-of-image" src="images/sentiment-analysis.png" alt="Image" style="width: 32%;">
+                    <h3>Sentiment Analysis for Product Reviews</h3>
+                    <p>
+                        For this project, text reviews were processed using machine learning algorithms to classify them as positive, negative or neutral (Sentiment Analysis). 
+                        The research compared multiple Rules based approaches(such as TextBlob, VADER) as well as Feature Extraction techniques(Logistic Regression, 
+                        Support Vector Machines) based on accuracy and the macro F1 score, in order to determine the best approach to perform Sentiment Analysis.
+                        <br><br>
+                        <strong>Tech Stack - </strong> Python, Machine Learning
+                    </p>
+                    <a href="https://github.com/Poluri62/sentiment-analysis-for-product-review">Github</a>
+                    <a href="https://github.com/Poluri62/sentiment-analysis-for-product-review/blob/main/Documentation/Sentiment-Analysis-For-Product-Analysis-ProjectReport.pdf" style="padding-left: 2%;">Documentation</a>
+                </div>
+            </div>
+
+            <!--hr>
+            <div class="skills">
+                <h2 id="personal-website" style="padding-top: 3%;padding-left:12.5%;font-family: Helvetica, sans-serif; font-size:400%; text-align: left;">Personal Website</h2>
+                <div class="skill-row">
+                    <img class="text-right-of-image" src="images/flappy-bird.png" alt="image">
+                    <p>
+                    A simple version of the Flappy Bird game using p5.js
+                    </p>
+                    <a href="https://github.com/Poluri62/sign-language-recognizer">Github</a>
+                    <a href="https://github.com/Poluri62/sign-language-recognizer/tree/main/Documentation" style="padding-left: 2%;">Documentation</a>
+                </div>
+            </div-->
+
+            <hr>
+            <div class="skills">
+                <h2 id="app" style="padding-top: 3%;padding-left:12.5%;font-family: Helvetica, sans-serif; font-size:400%; text-align: left;">Android Apps</h2>
+                <div class="skill-row" id="mnist-app">
+                    <!--img class="text-right-of-image" src="images/flappy-bird.png" alt="image"-->
+                    <h3>Digit Recognizer</h3>
+                    <p>
+                    The Android application in Java has a pre-trained tensorflow model which was trained on the <a href="https://www.tensorflow.org/datasets/catalog/mnist">MNIST dataset</a>.
+                    Any single digit number drawn on the canvas can be recognized by the model with 97% accuracy.
+                    </p>
+                    <a href="https://github.com/Poluri62/MNIST-APP">Github</a>
+                </div>
+            </div>
+
+            <!--hr>
+            <div class="skills">
+                <h2 id="java-script" style="padding-top: 3%;padding-left:12.5%;font-family: Helvetica, sans-serif; font-size:400%; text-align: left;">JavaScript</h2>
+                <div class="skill-row" id="flappy-bird">
+                    <img class="text-right-of-image" src="images/flappy-bird.png" alt="image">
+                    <h3>Flappy Bird</h3>
+                    <p>
+                    A simple version of the Flappy Bird game using p5.js
+                    </p>
+                    <a href="https://github.com/Poluri62/sign-language-recognizer">Github</a>
+                    <a href="https://github.com/Poluri62/sign-language-recognizer/tree/main/Documentation" style="padding-left: 2%;">Documentation</a>
+                </div>
+            </div-->
+
+
+            <div class="bottom-container" id="contact">
+                <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+                <a class="footer-link" href="https://www.instagram.com/divya_poluri/">Instagram</a>
+                <a class="footer-link" href="https://github.com/Poluri62">Github</a>
+                <p class="copyright">© 2022 Divya Poluri.</p>
+            </div>
+        </div>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-ref");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+            }
+
+            function toggleNav(){
+                navSize = parseInt(document.getElementById("mySideNav").style.width);
+                console.log(navSize==250);
+                if (navSize>0) {
+                    console.log("Something");
+                    closeNav();
+                } else{
+                    openNav();
+                }
+            }   
+
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySideNav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+    
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+                document.getElementById("mySideNav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                //document.getElementById("toggleSideNav").onclick = openNav();
+            }
+        </script>
+    </body>
+</html>

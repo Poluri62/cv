@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divya Poluri</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="omega.ico">
+    <!--link rel="icon" href="omega.ico"-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud image">
-        <h1>I'm Divya.</h1>
-        <h2>Software Developer</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
-        <img src="images/mountain.png" alt="mountain image">
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="#contact">Contact</a>
+      <a href="#">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="#">Skills</a>
+      <a class="active" href="#home">Home</a>
     </div>
+
+    <div style="display: flex; margin-top: 10%;">
+
+        <div class="skill-row" style="margin: auto; width: 50%;">
+          <img class="text-right-of-image" src="images/profile-modified.png" alt="image" style="padding-top: 0px; width: 38%;">
+          <h2 id="computer-vision" style="padding-top: 6%;padding-left:50%;font-family: Helvetica, sans-serif; font-size:300%; text-align: left; margin-top: 5%;">Divya Poluri</h2>
+          
+          <h3 style="margin-top: 0px; font-size: 100%; padding-left: 50%;">Backend Developer and AI Enthusiast</h3>
+        </div>
+        <!-- img class="bottom-cloud" src="images/cloud.png" alt="cloud image" -->
+        <!--img src="images/mountain.png" alt="mountain image" -->
+    </div>
+    <hr style="border-top: 2px dashed #333; width: 75%;">
+    
     <div class="middle-container">
         <div class="profile">
-          <img class="profile-pic" src="images/divya-circle.png" alt="Profile Picture" height="200px">
-          <h2>Hello.</h2>
-          <p>I'm Divya Poluri, a student and software developer. I love coffee, sports and Agatha Chrsitie. I watch a lot of sitcoms and action movies too(The Matrix begin my personal favourite).</p>
+          <!--img class="profile-pic" src="images/divya-circle.png" alt="Profile Picture" height="200px"-->
+          <h2>Hey there!</h2>
+          <p>I'm Divya, a backend software developer at Walmart Global Tech India. I graduated from Birla Institute of Technology, Mesra, in 2021 with a Bachelor's in Computer Science and Engineering.</p>
         </div>
-        <hr>
+        <!--hr>
         <div class="skills">
           <h2>My Skills.</h2>
           <div class="skill-row">
-            <img class="code" src="images/think-code-circle.png" alt="image">
+            <img class="text-right-of-image" src="images/think-code-circle.png" alt="image">
             <h3>Coding and Software Development</h3>
             <p>I am proficient in C++ and Pyhton, with moderate level Java skills. I have built multiple Deep Learning and Computer Vision projects as well.</p>
           </div>
           <div class="skill-row">
-            <img class="sports" src="images/sports-circle.png" alt="image">
+            <img class="text-left-of-image" src="images/sports-circle.png" alt="image">
             <div class="sports-skill-content">
                 <h3>Sports and Games</h3>
                 <p>I am an athlete and an enthusiastic sportsperson. I started out by playing tennis, but now I play volleyball and badminton too.</p>
@@ -46,14 +60,14 @@
           <h3>Up for a game or a Movie?</h3>
           <p>Find my contact details below and we're on!!</p>
           <a class="btn" href="mailto:divya.poluri@email.com">CONTACT ME</a>
-        </div>
+        </div-->
     </div>
       
-    <div class="bottom-container">
+    <div class="bottom-container" id="contact">
         <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
         <a class="footer-link" href="https://www.instagram.com/divya_poluri/">Instagram</a>
         <a class="footer-link" href="https://github.com/Poluri62">Github</a>
         <p class="copyright">© 2022 Divya Poluri.</p>
     </div>
-</body>
+  </body>
 </html>
